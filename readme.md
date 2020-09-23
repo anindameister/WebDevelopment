@@ -136,10 +136,160 @@ https://www.hostingadvice.com/how-to/best-static-web-hosting/
 - at times, you need app level state so that you can share data across multiple components and each frameworks have got different ways of doing it
 - we have libraries that are specifically built for this. Eg: React often uses redux. although redux can be also used with something else as well. There's a library called ReactRedux which uses both of them together
 - now redux is a 3rd party library. The underlined once are own library which almost creates the same effects as the 3rd party library
+- apollo client is used for graphQl
+- smaller app doesnt even need anything, everything can be put in root app component
 
 #### server side rendering
 
 ![server side rendering](https://github.com/anindameister/WebDevelopment/blob/master/snaps/15.PNG)
+
+- service side rendering as opposed to the sungle page webapp that's rendered on the client side that's by default when you use something like cretae react app it generates an app that runs  on the clinet
+- however there are frameworks like next which is react and nuxt which is vue that allows you to run react or vue on server
+- it seems like framework over framework but it's easier in the long run because it brings you close to production that using something like create react app where you just built the static asset so on
+- it uses filesystem routing which is the best feature of this
+- if you're using a regular single page application react, you need to use to react router and create routes and that can get kind of difficult 
+- with next or nuxt, you can create like js page and put it in pages folder and it would render automatically when you to go to your app/about
+- seo: if you build a standard react app, it's hard for search engine crawlers to see the data because it's getting rendered through JS after the page load
+- with serverside rendering, the content is already there as if it were just a regular html file on the server
+- static exporting-- generating static sites, css in your js; whole bunch of features from nuxt or next
+
+#### static site generators
+
+![static site generators](https://github.com/anindameister/WebDevelopment/blob/master/snaps/16.PNG)
+
+- gatsby most popular
+- generates static web pages
+- implementn data fetching
+- gatsby comes bundled with graphQl
+- unlike single page apps which we'd create with create react app, with those you make api request as you run the app
+- with gatsby, it does all the data fetching from local files during build time
+- and it's very performant
+- gatsby sites are incredibly fast
+- gatsby has some in common with next js like they provide boilerplate application, they're both performant, they have good seo
+- however, next js needs a server to run because it renders on a server whereas gatsby is merely a tool that would generate static HTMl on build time. so it doesn't need a server to function at all much like opening up a regular html file on your computer
+- you can use different plugins, create blogs and directories, type content using markdown
+- however you're not limited to a markdown file but you can use something like headless cms
+
+#### typeScript
+
+- beneficial in larger projects
+
+![typeScript](https://github.com/anindameister/WebDevelopment/blob/master/snaps/17.PNG)
+
+#### front-end wizard
+
+![front-end wizard](https://github.com/anindameister/WebDevelopment/blob/master/snaps/18.PNG)
+
+#### server-side language
+
+![server-side language](https://github.com/anindameister/WebDevelopment/blob/master/snaps/19.PNG)
+
+- node.js is a server-side runtime, allows you to use JS as a server side language
+- fast, synchronous, single-threaded, useful for web-app provided thats the web-app is not cpu intensive which generally webapps are not cpu intensive
+- mongoDB is javaScript like
+- php is very practical
+- c#, hard to write sphagetti code
+- GoLang- created by Google, easier than c and c++
+- Spring is liked by people, the Framwork
+- Rust can be used with webAssembly with c and C++
+
+#### server-side framwork
+
+![server-side framwork](https://github.com/anindameister/WebDevelopment/blob/master/snaps/20.PNG)
+
+- nest.js is very similar to angular. if you choose angular in front end then maybe go for nest.js as backend
+
+- django is very high level, authentication 
+- Ruby on Rails, fastest to create things
+
+#### database
+
+![database](https://github.com/anindameister/WebDevelopment/blob/master/snaps/21.PNG)
+
+- relation db- like spreadsheet.
+- postgres: easy to work with fast and object relational db
+- mongoDB stores as docs. 
+- cloud database- firebase: smaller to medium sized app.. gives authentication etc
+- SQL for relational
+
+#### graphQl
+
+![graphQl](https://github.com/anindameister/WebDevelopment/blob/master/snaps/22.PNG)
+
+#### content mgmt system
+
+![content mgmt system](https://github.com/anindameister/WebDevelopment/blob/master/snaps/23.PNG)
+
+#### deployment & devops
+
+![deployment & devops](https://github.com/anindameister/WebDevelopment/blob/master/snaps/24.PNG)
+
+- heroko: push from git
+- docker: local zamp server instead of docker
+
+#### full stack developer
+
+![full stack developer](https://github.com/anindameister/WebDevelopment/blob/master/snaps/25.PNG)
+
+#### mobile development
+
+![mobile development](https://github.com/anindameister/WebDevelopment/blob/master/snaps/26.PNG)
+
+- JS and java= flutter
+
+#### Progressive Web Apps
+
+![Progressive Web Apps](https://github.com/anindameister/WebDevelopment/blob/master/snaps/27.PNG)
+
+#### desktop apps with electron
+
+![desktop apps with electron](https://github.com/anindameister/WebDevelopment/blob/master/snaps/28.PNG)
+
+#### JAMstack
+
+![JAMstack](https://github.com/anindameister/WebDevelopment/blob/master/snaps/29.PNG)
+
+#### Serverless Architecture
+
+![Serverless Architecture](https://github.com/anindameister/WebDevelopment/blob/master/snaps/30.PNG)
+
+- runs the server when it needs it to, and not always
+
+#### api-first designing
+
+![api-first designing](https://github.com/anindameister/WebDevelopment/blob/master/snaps/31.PNG)
+
+#### ai and machine learning
+
+![ai and machine learning](https://github.com/anindameister/WebDevelopment/blob/master/snaps/32.PNG)
+
+#### speech recognition
+
+![speech recognition](https://github.com/anindameister/WebDevelopment/blob/master/snaps/33.PNG)
+
+#### web assembly
+
+![web assembly](https://github.com/anindameister/WebDevelopment/blob/master/snaps/34.PNG)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

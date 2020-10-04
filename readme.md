@@ -271,6 +271,15 @@ https://www.hostingadvice.com/how-to/best-static-web-hosting/
 
 ![web assembly](https://github.com/anindameister/WebDevelopment/blob/master/snaps/34.PNG)
 
+# How to plan your Java learning path [[1]](#1).
+
+![Java](https://github.com/anindameister/WebDevelopment/blob/master/snaps/41.PNG)
+
+
+## References
+<a id="1">[1]</a> 
+https://www.youtube.com/watch?v=DC5wtYGQ7XE&feature=youtu.be
+
 
 
 

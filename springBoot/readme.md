@@ -42,11 +42,12 @@
 
 # spring boot tutorial for beginners [[1]](#1).
 
-- https://www.youtube.com/watch?v=vtPkZShrvXQ
-- https://start.spring.io/
+
 - download Intellij
 - open as file
 - choose the the downloaded folder from [[2]](#2).
+- and choose the pom.xml and then choose open as project
+- we got to give it a second because the app intellij is resolving the dependencies for this project
 
 ## References
 <a id="1">[1]</a> 

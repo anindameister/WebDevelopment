@@ -40,16 +40,17 @@
 ![Spring Features](https://github.com/anindameister/WebDevelopment/blob/master/snaps/38.PNG)
 
 
-# spring boot tutorial for beginners
+# spring boot tutorial for beginners [[1]](#1).
 
 - https://www.youtube.com/watch?v=vtPkZShrvXQ
 - https://start.spring.io/
 - download Intellij
 - open as file
-- choose the the downloaded folder from [[1]](#1).
+- choose the the downloaded folder from [[2]](#2).
 
 ## References
 <a id="1">[1]</a> 
-Dijkstra, E. W. (1968). 
-Go to statement considered harmful. 
-Communications of the ACM, 11(3), 147-148.
+https://www.youtube.com/watch?v=vtPkZShrvXQ
+
+<a id="2">[2]</a> 
+https://start.spring.io/

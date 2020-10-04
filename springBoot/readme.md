@@ -44,3 +44,12 @@
 
 - https://www.youtube.com/watch?v=vtPkZShrvXQ
 - https://start.spring.io/
+- download Intellij
+- open as file
+- choose the the downloaded folder from [[1]](#1).
+
+## References
+<a id="1">[1]</a> 
+Dijkstra, E. W. (1968). 
+Go to statement considered harmful. 
+Communications of the ACM, 11(3), 147-148.

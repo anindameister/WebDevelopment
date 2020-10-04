@@ -38,3 +38,9 @@
 - if you wanna modify configuration then we dont have xml and for this purpose of modifying config files we have 
 
 ![Spring Features](https://github.com/anindameister/WebDevelopment/blob/master/snaps/38.PNG)
+
+
+# spring boot tutorial for beginners
+
+- https://www.youtube.com/watch?v=vtPkZShrvXQ
+- https://start.spring.io/

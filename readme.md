@@ -275,6 +275,10 @@ https://www.hostingadvice.com/how-to/best-static-web-hosting/
 
 ![Java](https://github.com/anindameister/WebDevelopment/blob/master/snaps/41.PNG)
 
+- concurrency API [[3]](#3).
+- collection API [[4]](#4).
+- JUnit [[5]](#5).
+
 # framework vs library [[2]](#2).
 
 ![Java](https://github.com/anindameister/WebDevelopment/blob/master/snaps/42.jpeg)
@@ -292,11 +296,14 @@ https://www.youtube.com/watch?v=DC5wtYGQ7XE&feature=youtu.be
 <a id="2">[2]</a> 
 https://youtu.be/PjyVXs0_3H8
 
+<a id="3">[3]</a> 
+https://www.youtube.com/watch?v=Cff0OCIDWoc
 
+<a id="4">[4]</a> 
+https://www.youtube.com/watch?v=jF1CgTl6fXc
 
-
-
-
+<a id="5">[5]</a> 
+https://www.youtube.com/watch?v=NbN3qI78PgU
 
 
 

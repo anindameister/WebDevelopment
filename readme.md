@@ -340,7 +340,181 @@ https://www.hostingadvice.com/how-to/best-static-web-hosting/
 ![Java](https://github.com/anindameister/WebDevelopment/blob/master/snaps/45.PNG)
 
 
-- JUnit [[5]](#5).
+## JUnit [[5]](#5).
+
+- create JavaProject with desired name
+- we'll go to the src folder and create a package named **junit.aninda.package**
+- inside this package, we'll create a class and assign some methods
+- we are just creating a method to increment integers, the follwoing contains the code
+
+```
+package junit.aninda.mypackage;
+
+public class MyClass {
+	
+	public int getIncrements(int a) {
+		return a++;
+	}
+
+}
+```
+
+- we will create a JUnit file now
+- Right click on the package, go to "other", right click and find "Junit Test case"
+- we have created a JUnit file with the name "MyJUnitFile"
+- soon after, we get a page asking for accepting the packages and after accepting we get all the packages like below.
+
+![Java](https://github.com/anindameister/WebDevelopment/blob/master/snaps/46.PNG)
+
+- the below is the default view of the JUnit file
+
+```
+package junit.aninda.mypackage;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class MyJUnitFile {
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}
+
+```
+- we are testing the data using assert.
+- let's look at the programmer
+```
+package junit.aninda.mypackage;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class MyJUnitFile {
+
+	@Test
+	void test() {
+		MyClass myclass=new MyClass();
+		assertEquals(17, myclass.getIncrements(16));
+	}
+
+}
+
+```
+- so assert+ctrl+space= assertEquals(expected, actual);
+- so our expected value is 17 in case of putting 16
+- so under expected we are giving 17
+- and under actual, we are calling the method and passing our parameter
+- we save and run and get an error like below
+
+![Java](https://github.com/anindameister/WebDevelopment/blob/master/snaps/47.PNG)
+
+- the reason could be based on a regular code, given below.
+
+```
+package collectionAPI;
+import java.util.*;
+public class Experiments {
+
+	public static  int getIncrements(int a) {
+		return a++;
+		
+	}
+	
+	public static void main(String[]args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("enter any number:");
+		int intifiedSc=sc.nextInt();
+		sc.close(); 
+		System.out.println("incremented result is:"+getIncrements(intifiedSc));
+		
+		
+		
+	}
+	
+
+}
+```
+
+- the complete thing is as below
+
+![Java](https://github.com/anindameister/WebDevelopment/blob/master/snaps/48.PNG)
+
+```
+++a
+```
+- the above can actually increment the result.
+- that's equal to a+1
+- JUnit result below after success
+
+![Java](https://github.com/anindameister/WebDevelopment/blob/master/snaps/49.PNG)
+
+- checking a different method in regards to Boolean
+
+```
+package junit.aninda.mypackage;
+
+public class MyClass {
+	
+	public int getIncrements(int a) {
+		return ++a;
+	}
+	public boolean checkingStr2AvailabilityInStr1(String str1, String str2) {
+		return str1.contains(str2);
+	}
+
+}
+```
+
+- JUnit file
+
+```
+package junit.aninda.mypackage;
+
+import static org.junit.Assert.assertTrue;
+
+import org.junit.jupiter.api.Test;
+
+class MyJUnitFile {
+
+	@Test
+	void test() {
+		MyClass myclass=new MyClass();
+//		assertEquals(17, myclass.getIncrements(16));
+		assertTrue(myclass.checkingStr2AvailabilityInStr1("Aninda Maulik is awesome", "are"));
+		
+	}
+
+}
+```
+![Java](https://github.com/anindameister/WebDevelopment/blob/master/snaps/50.PNG)
+
+- the True result would be given by
+
+```
+assertTrue(myclass.checkingStr2AvailabilityInStr1("Aninda Maulik is awesome", "are"));
+```
+
+![Java](https://github.com/anindameister/WebDevelopment/blob/master/snaps/51.PNG)
+
+- assertFalse
+
+- understand the first condition below
+
+![Java](https://github.com/anindameister/WebDevelopment/blob/master/snaps/52.PNG)
+
+- check the second condition below
+
+![Java](https://github.com/anindameister/WebDevelopment/blob/master/snaps/53.PNG)
+
+
+
+
+
 
 # framework vs library [[2]](#2).
 

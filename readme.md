@@ -275,8 +275,71 @@ https://www.hostingadvice.com/how-to/best-static-web-hosting/
 
 ![Java](https://github.com/anindameister/WebDevelopment/blob/master/snaps/41.PNG)
 
-- concurrency API [[3]](#3).
-- collection API [[4]](#4).
+- REST API - Concurrency in REST [[3]](#3).
+
+![Java](https://github.com/anindameister/WebDevelopment/blob/master/snaps/43.PNG)
+
+- the problem is that if user1 updates the resource (maxSpeed Paoli) then user2 after retrieving with GET request would be able to update the resource but the user1's update is lost forever. No database included in this scenario.
+- this problem is resolved by etag.
+
+![Java](https://github.com/anindameister/WebDevelopment/blob/master/snaps/44.PNG)
+
+- user 1 updates a resource no.1234, after updation this resource containing new content from user 1, gets a new id:4321; which is done by etag
+- user 2 attempts to update resource 1234, this user wont find the resource when attempting to do a GET request on 1234
+- Hence user 2, is forced to attempt to search and finally retrieves resource 4321, sees the update by user 1 and then update or not update accordingly.
+
+# concurrency [[6]](#6).
+
+- let's take this situation am writing something while listening to audio.
+-  Even a single application is often expected to do more than one thing at a time. 
+- For example, that streaming audio application must simultaneously read the digital audio off the network, decompress it, manage playback, and update its display. 
+- Even the word processor should always be ready to respond to keyboard and mouse events, no matter how busy it is reformatting text or updating the display. 
+- Software that can do such things is known as concurrent software.
+- The Java platform is designed from the ground up to support concurrent programming, with basic concurrency support in the Java programming language and the Java class libraries. 
+- Since version 5.0, the Java platform has also included high-level concurrency APIs. 
+- This lesson introduces the platform's basic concurrency support and summarizes some of the high-level APIs in the java.util.concurrent packages.
+
+## Processes and Threads
+
+- In concurrent programming, there are two basic units of execution: processes and threads. 
+- In the Java programming language, concurrent programming is mostly concerned with threads. However, processes are also important.
+- A computer system normally has many active processes and threads. 
+- This is true even in systems that only have a single execution core, and thus only have one thread actually executing at any given moment. 
+- Processing time for a single core is shared among processes and threads through an OS feature called time slicing.
+- It's becoming more and more common for computer systems to have multiple processors or processors with multiple execution cores. 
+- This greatly enhances a system's capacity for concurrent execution of processes and threads — but concurrency is possible even on simple systems, 
+- without multiple processors or execution cores.
+
+### Processes
+- A process has a self-contained execution environment. 
+- A process generally has a complete, private set of basic run-time resources; in particular, each process has its own memory space.
+- recall phD saying, my my yolo failed in 4gb computer because eclipse was running right there. So eclipse has a certain amount of memory(ram) allocated for itself.
+- Processes are often seen as synonymous with programs or applications. Hence, the above statement.
+- However, what the user sees as a single application may in fact be a set of cooperating processes. 
+- To facilitate communication between processes, most operating systems support Inter Process Communication (IPC) resources, such as pipes and sockets. 
+- IPC is used not just for communication between processes on the same system, but processes on different systems.
+- Most implementations of the Java virtual machine run as a single process. 
+- A Java application can create additional processes using a ProcessBuilder object . [[7]](#7)
+- Multiprocess applications are beyond the scope of this lesson.
+
+### Threads
+- Threads are sometimes called lightweight processes. 
+- Both processes and threads provide an execution environment, but creating a new thread requires fewer resources than creating a new process.
+- Threads exist within a process — every process has at least one thread. 
+- Threads share the process's resources, including memory and open files. This makes for efficient, but potentially problematic, communication.
+- Multithreaded execution is an essential feature of the Java platform. 
+- Every application has at least one thread — or several, if you count "system" threads that do things like memory management and signal handling. 
+- But from the application programmer's point of view, you start with just one thread, called the main thread. 
+- This thread has the ability to create additional threads, as we'll demonstrate in the next section.
+
+## collection API [[4]](#4).
+
+- Shift+Ctrl+O, then the java class will be imported in the java source file automatically.
+- To get System. out. println() line in eclipse without typing the whole line type sysout and press Ctrl + space.
+
+![Java](https://github.com/anindameister/WebDevelopment/blob/master/snaps/45.PNG)
+
+
 - JUnit [[5]](#5).
 
 # framework vs library [[2]](#2).
@@ -305,7 +368,11 @@ https://www.youtube.com/watch?v=jF1CgTl6fXc
 <a id="5">[5]</a> 
 https://www.youtube.com/watch?v=NbN3qI78PgU
 
+<a id="6">[6]</a> 
+https://docs.oracle.com/javase/tutorial/essential/concurrency/
 
+<a id="7">[7]</a> 
+https://docs.oracle.com/javase/8/docs/api/java/lang/ProcessBuilder.html
 
 
 

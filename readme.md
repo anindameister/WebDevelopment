@@ -2,6 +2,8 @@
 
 - link http://www.clelia.fr/Telecom/
 
+![The Necessities](https://github.com/anindameister/WebDevelopment/blob/master/snaps/54.PNG)
+
 # traversy
 
 #### the necessities
@@ -512,6 +514,9 @@ assertTrue(myclass.checkingStr2AvailabilityInStr1("Aninda Maulik is awesome", "a
 ![Java](https://github.com/anindameister/WebDevelopment/blob/master/snaps/53.PNG)
 
 
+# Introduction to Maven | Theory [[8]](#8).
+
+
 
 
 
@@ -548,7 +553,8 @@ https://docs.oracle.com/javase/tutorial/essential/concurrency/
 <a id="7">[7]</a> 
 https://docs.oracle.com/javase/8/docs/api/java/lang/ProcessBuilder.html
 
-
+<a id="8">[8]</a> 
+https://www.youtube.com/watch?v=dqJanLvjDqc
 
 
 

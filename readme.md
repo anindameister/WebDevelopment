@@ -516,6 +516,79 @@ assertTrue(myclass.checkingStr2AvailabilityInStr1("Aninda Maulik is awesome", "a
 
 # Introduction to Maven | Theory [[8]](#8).
 
+# gradle
+
+- Gradle Beginner Tutorial 1 | What are Build Tools | What is Gradle | Step by Step [[9]](#9).
+- google gradle
+- google gradle user manual
+- Gradle is an open-source build automation tool that is designed to be flexible enough to build almost any type of software. 
+- Build automation is the process of automating the creation of a software build and the associated processes including: compiling computer source code into binary code, packaging binary code, and running automated tests.
+- In software development, a build is the process of converting source code files into standalone software artifact(s) that can be run on a computer, or the result of doing so.
+
+# jar 
+- just a reference https://automationstepbystep.com/
+- Java Beginner Tutorial 7 - JAR (Java Archive) basics [[10]](#10).
+- jar is a compressed version of compiled java projects
+- jar contains .class file and some meta data
+- the .class file is the machine readable version of .java
+- a .jar file can be run from commandline
+- for windows, we got to navigate to the directory of the jar file location and do below
+- eg. java -jar checkingArmstrong.jar
+- the above would work
+- now while converting a java project to jar the steps are below
+- click export on the main package
+- go on with "next"
+- just make sure to choose the main class
+- this main class if associated to other class in terms of inheritance would go on to work fine
+- now, in my case there were two main classes and I decided to make the armstrong.java as the main class
+- just recall the java phones which contained the jar files which could have been executed in the java phones
+- anyway, let say that am sending my jar file to Dharmalingam, so what he can do to checck the codes written by me; is as follows
+- he'd decompile it, as in, converting .class(machine-readable version) to .java(human readable version) by decompiling application which comes as gui/eclipse plugin etc
+- java decompiler by the speaker is this http://java-decompiler.github.io/
+- we have online decompilers as well
+
+- some python for sentence generation
+
+```
+extension=input("Enter the extension: ")
+startingNumber=int(input("Enter the starting point in number: "))
+endingNumber=int(input("Enter the ending point in number: "))
+print("![Java](https://github.com/anindameister/WebDevelopment/blob/master/snaps/")
+incompleteSentence=input("Give the incomplete sentence like the above: ")
+
+for i in range(startingNumber,endingNumber+1):
+  print(incompleteSentence+str(i)+"."+extension+")")
+```
+
+- the jar file in here \\Desktop-rjtbdct\h\web development\JavaJarFiles\GenerateSentences.jar
+
+# jre,jdk,jvm
+
+![Java](https://github.com/anindameister/WebDevelopment/blob/master/snaps/55.PNG)
+![Java](https://github.com/anindameister/WebDevelopment/blob/master/snaps/56.PNG)
+![Java](https://github.com/anindameister/WebDevelopment/blob/master/snaps/57.PNG)
+
+- in the above snap, we see the initial part which are javaSourceCode and Compile
+- these two ie. javaSourceCode and Compile is required for development by programmer and hence it is a part of JavaDevelopmentKit
+- JavaDevelopmentKit can be downloaded by google searching the same
+- so  JavaDevelopmentKit would be used to generate ByteCode or machineReadble code
+- so compiler generates byteCode and interpreter, that is the JVM reads the byteCode
+- JVM is a part of JRE
+- JRE is JavaRuntimeEnvironment. This contains libraries which is required to run a java application in your computer
+- downloading JRE after google search could be used only for running java application
+- downloading jdk after google search includes jre, which is existent for running java application; and since we're downloading jdk so jdk comes as well for java application developement
+
+![Java](https://github.com/anindameister/WebDevelopment/blob/master/snaps/61.PNG)
+![Java](https://github.com/anindameister/WebDevelopment/blob/master/snaps/60.PNG)
+![Java](https://github.com/anindameister/WebDevelopment/blob/master/snaps/58.PNG)
+![Java](https://github.com/anindameister/WebDevelopment/blob/master/snaps/59.PNG)
+
+
+
+
+
+
+
 
 
 
@@ -556,9 +629,11 @@ https://docs.oracle.com/javase/8/docs/api/java/lang/ProcessBuilder.html
 <a id="8">[8]</a> 
 https://www.youtube.com/watch?v=dqJanLvjDqc
 
+<a id="9">[9]</a> 
+https://www.youtube.com/watch?v=Nabjqv8KDgc
 
-
-
+<a id="10">[10]</a> 
+https://www.youtube.com/watch?v=QB19Wqimkq4&list=PLhW3qG5bs-L_qj1L5hnHvJYeFpQ_g4UuU&index=7
 
 
 

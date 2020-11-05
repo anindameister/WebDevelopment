@@ -666,7 +666,27 @@ for i in range(startingNumber,endingNumber+1):
 - I said do whatever, just return some change because I have to buy cigarette.
 - shopkeeper accepts the 15, 3 coupons ; finds out the 3 and gives the 3bucks to the kitchen as a tip for serving me with extra cheese.
 
+#### exception
+- https://stackoverflow.com/questions/31611982/catch-the-same-exception-twice
+```
+public void method(){
 
+    try{
+        methodThrowingIllegalArgumentException();
+        return;
+    catch (IllegalArgumentException e) {
+        try {
+            anotherMethodThrowingIllegalArgumentException();            
+            return;
+        } catch(IllegalArgumentException eee){
+            //do some
+            return;
+        }
+    } catch (SomeAnotherException ee){
+       return;
+    }
+}
+```
 
 
 

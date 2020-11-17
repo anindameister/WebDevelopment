@@ -1,0 +1,25 @@
+<h2>The Post Create Component</h2>
+
+<textarea  rows="6">{{'Please enter some content'}}</textarea>
+
+
+<hr>
+<button (click)="onAddPost()">SavePost</button>
+<p>{{ newPost }}</p>
+
+<hr>
+
+<textarea name="anindaMaulik" cols="30" rows="10" [value]="newPost2" ></textarea>
+<hr>
+<hr>
+<button (click)="onAddPost2()">SavePost</button>
+<p>{{ newPost2 }}</p>
+
+
+<hr>
+
+<textarea rows="3" [value]="'ThisTextIsANoContentTextComingFromAngular'" ></textarea>
+<hr>
+<hr>
+<button (click)="onAddPost2()">SavePost</button>
+<p>{{ newPost2 }}</p>

@@ -1,0 +1,7 @@
+- by default, all the methods in interface is public so we need not say public
+- BeanFactory for small apps
+- ApplicationContext for enterprise level apps
+- google the following
+- spring applicationcontext xml beans xmlns
+- https://stackoverflow.com/questions/3907833/spring-applicationcontext-xml-cannot-be-opened-because-it-does-not-exist
+- created a folder resource and have put the xml file there
